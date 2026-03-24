@@ -1,0 +1,10 @@
+# https://render.com/docs/deploy-java
+services:
+  - type: web
+    name: whatsapp-chatbot-sim
+    runtime: java
+    buildCommand: ./mvnw clean package -DskipTests
+    startCommand: java -jar target/WhatsappChatbot-0.0.1-SNAPSHOT.jar
+    envVars:
+      - key: JAVA_VERSION
+        value: 21
