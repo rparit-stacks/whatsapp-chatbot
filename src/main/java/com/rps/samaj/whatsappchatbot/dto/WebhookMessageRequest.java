@@ -12,6 +12,8 @@ public class WebhookMessageRequest {
         if (text == null || text.isBlank()) {
             return "";
         }
+
+
         return text.trim();
     }
 
